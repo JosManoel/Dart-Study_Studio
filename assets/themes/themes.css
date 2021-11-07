@@ -1,0 +1,72 @@
+/* Dark dimmed theme */
+.dark-dimmed:root {
+    --color-border: #666B73;
+
+    --color-primary-background: #22272E;
+    --color-secondary-background: #1C2128;
+    --color-navigation-background: #2D333B;
+
+    --color-primary-text: #C6CCD3;
+    --color-secondary-text: #ADBAC7;
+    
+    --color-navigation-text: #C6CCD3;
+    --color-banner-typography: #F8F9FA;
+    
+    --color-input-disabled: #3B3B3B;
+    --color-input-enabled: #D1E6FF;
+
+    --color-tag-text: #2E7CD5;
+    --color-tag-background: #253651;
+
+    --color-primary-shield: #9D3D3E;
+    --color-secondary-shield: #5E5A5A;
+}
+
+/* Default Dark theme */
+.default-dark:root {
+    --color-border: #30363D;
+
+    --color-primary-background: #0D1117;
+    --color-secondary-background: #0D1117;
+    --color-navigation-background: #161B22;
+
+    --color-primary-text: #F0F6FC;
+    --color-secondary-text: #C9D1D9;
+    
+    --color-navigation-text: #F0F6FC;
+    --color-banner-typography: #F8F9FA;
+    
+    --color-input-disabled: #3B3B3B;
+    --color-input-enabled: #D1E6FF;
+
+    --color-tag-text: #2E7CD5;
+    --color-tag-background: #13233A;
+
+    --color-primary-shield: #9D3D3E;
+    --color-secondary-shield: #5E5A5A;
+}
+
+/* Default light theme */
+.default-light:root {
+    --color-border: #D0D7DE;
+
+    --color-primary-background: #FFFFFF;
+    --color-secondary-background: #F6F8FA;
+    --color-navigation-background: #24292F;
+
+    --color-primary-text: #24292F;
+    --color-secondary-text: #24292F;
+    
+    --color-navigation-text: #F8F9FA;
+    --color-banner-typography: #F8F9FA;
+    
+    --color-input-disabled: #F6F8FA;
+    --color-input-enabled: #2E7CD5;
+
+    --color-tag-text: #2E7CD5;
+    --color-tag-background: #DDF4FF;
+
+    --color-primary-shield: #9D3D3E;
+    --color-secondary-shield: #5E5A5A;
+}
+

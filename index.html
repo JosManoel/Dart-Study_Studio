@@ -1,25 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="dark-dimmed">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dart Study Studio</title>
-
-    <script src="/script.js"></script>
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
-            crossorigin="anonymous">
-    </script>
-
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body >
     <div class="container">
         <header>
             <div class="navbar__title-wrapper">
-                <img class="navbar__icon" src="/assets/icons/dart.png">
+                <img class="navbar__icon" src="/assets/icons/dart.svg">
                 <h1>Dart Study Studio</h1>
             </div>
 
@@ -38,9 +30,9 @@
                                 <img src="/assets/themes/theme_light_default_preview.svg" alt="dark dimmed" class="theme__preview">
                                 
                                 <div class="theme__select">
-                                    <input type="radio" id="theme1" class="select__input">
+                                    <input type="radio" id="defaltLight" class="select__input" name="theme-mode">
                                     
-                                    <label for="theme1" class="select__input-label"></label>
+                                    <label for="defaltLight" class="select__input-label"></label>
 
                                     <h3>Default light</h3>
                                 </div>
@@ -50,33 +42,21 @@
                                 <img src="/assets/themes/theme_dark_default_preview.svg" alt="dark dimmed" class="theme__preview">
                                 
                                 <div class="theme__select">
-                                    <input type="radio" id="theme3" class="select__input">
+                                    <input type="radio" id="defaultDark" class="select__input" name="theme-mode">
                                     
-                                    <label for="theme3" class="select__input-label"></label>
+                                    <label for="defaultDark" class="select__input-label"></label>
 
                                     <h3>Default dark</h3>
                                 </div>
                             </div>
-    
-                            <div class="theme">
-                                <img src="/assets/themes/theme_light_colorblind_preview.svg" alt="dark dimmed" class="theme__preview">
-    
-                                <div class="theme__select">
-                                    <input type="radio" id="theme2" class="select__input">
-                                    
-                                    <label for="theme2" class="select__input-label"></label>
-
-                                    <h3>Light colorblind</h3>
-                                </div>
-                            </div>
-    
+        
                             <div class="theme">
                                 <img src="/assets/themes/theme_dark_dimmed_preview.svg" alt="dark dimmed" class="theme__preview">
     
                                 <div class="theme__select">
-                                    <input type="radio" id="theme4" class="select__input">
+                                    <input type="radio" id="darkDimmed" class="select__input" name="theme-mode">
                                     
-                                    <label for="theme4" class="select__input-label"></label>
+                                    <label for="darkDimmed" class="select__input-label"></label>
 
                                     <h3>Dark dimmed</h3>
                                 </div>
@@ -96,13 +76,13 @@
                                         <div class="preview-banner__paragraph"></div>
                                         
                                         <div class="preview-banner__title-wrapper">
-                                            <h1 class="preview-banner__title">
-                                                Cevadis im ampola pa arma uma pindureta
+                                            <h1 class="preview-banner__title" id="previewBanner">
+                                                Cevadis im ampola pa arma uma pinduretad sdfsdf sdfsdfsdf sdfsfsd fdsfsfsdfs fdsdfd fsdfsd fssdf sdfsdfs dfd
                                             </h1>
                                         </div>
 
                                         <div class="preview-banner__image">
-                                            <img src="/assets/images/Pic_banner_EVA01.png" alt="">
+                                            <img id = "previewImage" src="/assets/images/Pic_banner_EVA01.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -111,9 +91,9 @@
                                     Cevadis im ampola pa arma uma pindureta. Aenean aliquam molestie leo, vitae iaculis nisl. Per aumento de cachacis, eu reclamis. Manduma pindureta quium dia nois paga.
                                 </p>
     
-                                <div class="preview-title__wrapper">
-                                    <div class="preview-title__background">
-                                        <h1 class="preview-title__text">
+                                <div class="preview-title__background">
+                                    <div class="preview-title__text-wrapper">
+                                        <h1 class="preview-title__text" id="previewTitle">
                                             Per aumento de cachacis, eu reclamis
                                         </h1>
                                     </div>
@@ -131,12 +111,12 @@
     
                                 <div class="preview-shield__wrapper">
                                     <div class="preview-shield__tech-background">
-                                        <img src="/assets/icons/dart.png" alt="" class="preview-shield__icon">
+                                        <img src="/assets/icons/dart.svg" alt="" class="preview-shield__icon">
                 
                                         <h3 class="preview-shield__title">DartPad</h3>
                                     </div>
                 
-                                    <h3 class="preview-shield__title">Manduma DartPad  quium dia nois paga</h3>
+                                    <h3 class="preview-shield__title" id="previewShield">Manduma DartPad quium dia nois paga</h3>
                                 </div>
                             </div>
     
@@ -159,14 +139,22 @@
 
                 <div class="editor__formulary">
                     <div class="formulary">
-                        <h2 class="formulary__title">Banner Editor</h2>
-                        
+                        <div class="download__wrapper">
+
+                            <h2>Banner Editor</h2>
+
+                            <button class="download-image" type="button" onclick="downloadImage('.render-banner__container', 'banner')">
+                                Download
+                                <img src="/assets/icons/download.svg" class="icon">
+                            </button>
+                        </div>
+
                         <h3 class="formulary__subtitle">Title</h3>
 
                         <div class="formulary__wrapper">
-                            <input type="text" class="formulary__input"/> 
+                            <input type="text" class="formulary__input" id="inputBanner"/> 
                         </div>
-            
+
                         <div class="formulary__wrapper">
                             <div class="formulary__banner-theme">
                                 <h3 class="formulary__subtitle">Banner picture</h3>
@@ -175,42 +163,33 @@
                                     <button class="banner-theme__select-theme">
                                         <div class="banner-theme">
                                             <img src="/assets/images/Pic_banner_EVA01.png" alt="eva" class="banner-theme__picture">
-                                        </div>
-
-                                        <div class="banner-theme__text-wrapper">
-                                            <h3>EVA 01</h3>
-                                        </div>
+                                        </div> 
                                     </button>
 
                                     <button class="banner-theme__select-theme">
                                         <div class="banner-theme">
                                             <img src="/assets/images/Pic_banner_Gurren_Lagann.png" alt="eva" class="banner-theme__picture">
-                                        </div>
-
-                                        <div class="banner-theme__text-wrapper">
-                                            <h3>Gurren Lagann</h3>
-                                        </div>
+                                        </div>  
                                     </button>
 
                                     <button class="banner-theme__select-theme">
                                         <div class="banner-theme">
                                             <img src="/assets/images/Pic_banner_Dash.png" alt="eva" class="banner-theme__picture">
-                                        </div>
-
-                                        <div class="banner-theme__text-wrapper">
-                                            <h3>Dash</h3>
-                                        </div>
+                                        </div>       
                                     </button>
 
                                     <button class="banner-theme__select-theme">
                                         <div class="banner-theme">
-                                            <img src="/assets/images/Dart_upload.png" alt="eva" class="banner-theme__picture">
-                                        </div>
-
-                                        <div class="banner-theme__text-wrapper">
-                                            <h3>Upload Images</h3>
-                                        </div>
+                                            <img  src="/assets/images/Dart_upload.png" alt="eva" class="banner-theme__picture">
+                                        </div>   
                                     </button>
+                                </div>
+                                
+                                <div class="formulary-upload__wrapper">
+                                    <label for="upload" class="formulary-upload__label">Add File</label>
+                                    <input type="file" class="formulary-upload__input" id="upload" accept="image/png, image/jpeg"/>
+
+                                    <h3 id="uploadFileName" class="formulary-upload__name">Nenhum arquivo selecionado</h3>
                                 </div>
                             </div>
 
@@ -245,31 +224,43 @@
                     </div>
 
                     <div class="formulary">
-                        <h2 class="formulary__title">Title Editor</h2>
+                        <div class="download__wrapper">
+                            <h2>Title Editor</h2>
+
+                            <button class="download-image" type="button" onclick="downloadImage('.render-title__container', 'title')">
+                                Download
+                                <img src="/assets/icons/download.svg" class="icon">
+                            </button>
+                        </div>
 
                         <h3 class="formulary__subtitle">Title</h3>
 
                         <div class="formulary__wrapper">
-                            <input type="text" class="formulary__input"/> 
+                            <input type="text" class="formulary__input" id="inputTitle"/> 
                         </div>
                     </div>
 
                     <div class="formulary">
-                        <h2 class="formulary__title">Shield Editor</h2>
+                        <div class="download__wrapper">
+                            <h2>Shield Editor</h2>
+
+                            <button class="download-image" type="button" onclick="downloadImage('.render-shield__container', 'shield')">
+                                Download
+                                <img src="/assets/icons/download.svg" class="icon">
+                            </button>
+                        </div>
 
                         <h3 class="formulary__subtitle">Title</h3>
 
                         <div class="formulary__shield">
                             <button>
-                                <img class="icon--dart" src="/assets/icons/dart.png">
+                                <img class="icon--dart" src="/assets/icons/dart.svg">
 
                                 <h3>DartPad</h3>
-
                             </button>
 
                             <div class="formulary__wrapper">
-                                <input type="text" class="formulary__input"/> 
-                                
+                                <input type="text" class="formulary__input" id="inputShield"/> 
                             </div>
                         </div>
                     </div>
@@ -279,13 +270,14 @@
             <div class="render">
                 <div class="render-banner__container">
                     <div class="render-banner__image">
-                        <img src="/assets/images/Pic_banner_EVA01.png" alt="">
+                        <img id = "renderImage" src="/assets/images/Pic_banner_EVA01.png" alt="">
                     </div>
+
                     <div class="render-banner__background">
                         <div class="render-banner__paragraph"></div>
                         
                         <div class="render-banner__title-wrapper">
-                            <h1 class="render-banner__title">
+                            <h1 class="render-banner__title" id="renderBanner">
                                 String: Utilização e manipulação no Dart 
                             </h1>
                         </div>
@@ -296,7 +288,7 @@
 
                 <div class="render-title__container">
                     <div class="render-title__background">
-                        <h1 class="render-title__text">
+                        <h1 class="render-title__text" id="renderTitle">
                             Utilização e manipulação no Dart
                         </h1>
                     </div>
@@ -306,13 +298,13 @@
 
                 <div class="render-shield__container">
                     <div class="render-shield__tech-background">
-                        <img src="/assets/icons/dart.png" alt="" class="render-shield__icon">
+                        <img src="/assets/icons/dart.svg" alt="" class="render-shield__icon">
 
                         <h3 class="render-shield__title">DartPad</h3>
                     </div>
 
                     <div class="render-shield__text">
-                        <h3 class="render-shield__title">Para o DartPad e além!</h3>
+                        <h3 class="render-shield__title" id="renderShield">Para o DartPad e além!</h3>
                     </div>
                 </div>
 
@@ -320,6 +312,7 @@
                     <p>Bom dia, boa tarde ou boa noite!</p>
 
                     <p>Parabens por chegar aqui! No nosso ramo, a curiosidade é fundamental.</p>
+                    
                 </div>
             </div>
         </home>
@@ -327,19 +320,29 @@
         <footer>
             <div class="footer__message">
                 <h3>Feito por JosManoel com</h3>
-                <img src="/assets/icons/coffe.png" class="footer__icon" alt="">
+                <img src="/assets/icons/coffee.svg" class="icon" alt="">
 
                 <h3>,</h3>
                 
-                <img src="/assets/icons/headset.png" class="footer__icon" alt="">
+                <img src="/assets/icons/headphones.svg" class="icon" alt="">
 
                 <h3>e</h3>
 
-                <img src="/assets/icons/laptop.png" class="footer__icon" alt="">
+                <img src="/assets/icons/laptop.svg" class="icon" alt="">
 
                 <h3>.</h3>
             </div>
         </footer>
     </div>
+
+    
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous">
+    </script>
+
+    <script src="/script.js"></script>
 </body>
 </html>
