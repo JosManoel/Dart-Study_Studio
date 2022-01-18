@@ -1,15 +1,22 @@
 /* Dark dimmed theme */
 .dark-dimmed:root {
     --color-border: #666B73;
-
+    
     --color-primary-background: #22272E;
     --color-secondary-background: #1C2128;
     --color-navigation-background: #2D333B;
-
+    
+    --color-primary-button: #347D39;
+    --color-primary-button-hover: #46954A;
+    --color-secondary-button: #DA3633;
+    --color-secondary-button-hover: #A62927;
+    --color-button-text: #FFFFFF;
+    
     --color-primary-text: #C6CCD3;
     --color-secondary-text: #ADBAC7;
     
     --color-navigation-text: #C6CCD3;
+    --color-banner-text: #F8F9FA;
     --color-banner-typography: #F8F9FA;
     
     --color-input-disabled: #3B3B3B;
@@ -24,16 +31,23 @@
 
 /* Default Dark theme */
 .default-dark:root {
-    --color-border: #30363D;
+    --color-border: #585C61;
 
     --color-primary-background: #0D1117;
     --color-secondary-background: #0D1117;
     --color-navigation-background: #161B22;
 
+    --color-primary-button: #347D39;
+    --color-primary-button-hover: #46954A;
+    --color-secondary-button: #DA3633;
+    --color-secondary-button-hover: #A62927;
+    --color-button-text: #FFFFFF;
+
     --color-primary-text: #F0F6FC;
     --color-secondary-text: #C9D1D9;
     
     --color-navigation-text: #F0F6FC;
+    --color-banner-text: #F8F9FA;
     --color-banner-typography: #F8F9FA;
     
     --color-input-disabled: #3B3B3B;
@@ -49,15 +63,22 @@
 /* Default light theme */
 .default-light:root {
     --color-border: #D0D7DE;
-
+ 
     --color-primary-background: #FFFFFF;
     --color-secondary-background: #F6F8FA;
     --color-navigation-background: #24292F;
+    
+    --color-primary-button: #2DA44E;
+    --color-primary-button-hover: #2c974b;
+    --color-secondary-button: #D73A49;
+    --color-secondary-button-hover: #A0111F;
+    --color-button-text: #FFFFFF;
 
     --color-primary-text: #24292F;
     --color-secondary-text: #24292F;
     
     --color-navigation-text: #F8F9FA;
+    --color-banner-text: #F8F9FA;
     --color-banner-typography: #F8F9FA;
     
     --color-input-disabled: #F6F8FA;

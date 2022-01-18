@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dart Study Studio</title>
+
     <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/assets/icons/dart.svg" type="image/x-icon">
 </head>
 <body >
     <div class="container">
@@ -13,11 +15,12 @@
             <div class="navbar__title-wrapper">
                 <img class="navbar__icon" src="/assets/icons/dart.svg">
                 <h1>Dart Study Studio</h1>
+                <h3 class="beta">beta</h3>
             </div>
 
-            <button class="navbar__button">
+            <a href="https://github.com/JosManoel/Dart-Study" class="navbar__button">
                 <h1>Dart Study</h1>
-            </button>
+            </a>
         </header>
 
         <home>
@@ -75,14 +78,14 @@
                                     <div class="preview-banner__background">
                                         <div class="preview-banner__paragraph"></div>
                                         
-                                        <div class="preview-banner__title-wrapper">
+                                        <div id = "previewTextWrapper" class="preview-banner__title-wrapper">
                                             <h1 class="preview-banner__title" id="previewBanner">
-                                                Cevadis im ampola pa arma uma pinduretad sdfsdf sdfsdfsdf sdfsfsd fdsfsfsdfs fdsdfd fsdfsd fssdf sdfsdfs dfd
+                                                Cevadis im ampola pa arma uma pindureta
                                             </h1>
                                         </div>
 
                                         <div class="preview-banner__image">
-                                            <img id = "previewImage" src="/assets/images/Pic_banner_EVA01.png" alt="">
+                                            <img id = "previewImage" src="/assets/icons/dart.svg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -91,14 +94,10 @@
                                     Cevadis im ampola pa arma uma pindureta. Aenean aliquam molestie leo, vitae iaculis nisl. Per aumento de cachacis, eu reclamis. Manduma pindureta quium dia nois paga.
                                 </p>
     
-                                <div class="preview-title__background">
-                                    <div class="preview-title__text-wrapper">
-                                        <h1 class="preview-title__text" id="previewTitle">
-                                            Per aumento de cachacis, eu reclamis
-                                        </h1>
-                                    </div>
-                                </div>
-    
+                                <h2>
+                                    Per aumento de cachacis, eu reclamis
+                                </h2>
+
                                 <p class="preview__paragraph">
                                     Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Mé faiz elementum girarzis, nisi eros vermeio. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.
                                 </p>
@@ -116,7 +115,7 @@
                                         <h3 class="preview-shield__title">DartPad</h3>
                                     </div>
                 
-                                    <h3 class="preview-shield__title" id="previewShield">Manduma DartPad quium dia nois paga</h3>
+                                    <h3 class="preview-shield__title" id="previewShield">Manduma DartPad!</h3>
                                 </div>
                             </div>
     
@@ -131,7 +130,7 @@
                                     Dart
                                 </div>
 
-                                <h4 class="sidebar__ipsum-name">Mussum Ipsum</h4>
+                                <a href="https://mussumipsum.com/" class="sidebar__ipsum-name"> Mussum Ipsum </a>
                             </div>
                         </div>
                     </div>
@@ -139,128 +138,120 @@
 
                 <div class="editor__formulary">
                     <div class="formulary">
-                        <div class="download__wrapper">
-
+                        <div class="formulary-title__wrapper">
                             <h2>Banner Editor</h2>
 
                             <button class="download-image" type="button" onclick="downloadImage('.render-banner__container', 'banner')">
                                 Download
-                                <img src="/assets/icons/download.svg" class="icon">
+                                
+                                <span class="download-image-icon">
+                                get_app
+                                </span>
                             </button>
                         </div>
 
-                        <h3 class="formulary__subtitle">Title</h3>
-
-                        <div class="formulary__wrapper">
-                            <input type="text" class="formulary__input" id="inputBanner"/> 
+                        <div class="formulary-subtitle__wrapper">
+                            <h3 class="formulary__subtitle">Title</h3>
+                            <h3 class="formulary__subtitle" id="inputBannerCount">39/64</h3>
                         </div>
 
                         <div class="formulary__wrapper">
-                            <div class="formulary__banner-theme">
-                                <h3 class="formulary__subtitle">Banner picture</h3>
+                            <input type="text" maxlength='64' class="formulary__input" id="inputBanner" value="Cevadis im ampola pa arma uma pindureta"/> 
+                        </div>
+
+                        <div class="formulary-subtitle__wrapper">
+                            <h3 class="formulary__subtitle">Banner picture</h3>
+                        </div>
+
+                        <div class="formulary-upload__wrapper">
+                            <label for="upload" class="formulary-upload__label">Add File</label>
+                            <input type="file" class="formulary-upload__input" id="upload" accept="image/png, image/jpeg"/>
+
+                            <h3 id="uploadFileName" class="formulary-upload__name">Nenhum arquivo selecionado</h3>
+                        </div>
+                    
+                        <div class="formulary-subtitle__wrapper">
+                            <h3 class="formulary__subtitle">Select color</h3>
+                        </div>
+
+                        <div class="formulary__wrapper">
+                            <label for="primaryColorPicker" class="banner-color__preview" id="previewPrimaryColor"></label>
+
+                            <div class="color__wrapper">
+                                <h3>Primary color</h3>
+
+                                <input type="color" id="primaryColorPicker" class="colorPicker">
 
                                 <div class="formulary__wrapper">
-                                    <button class="banner-theme__select-theme">
-                                        <div class="banner-theme">
-                                            <img src="/assets/images/Pic_banner_EVA01.png" alt="eva" class="banner-theme__picture">
-                                        </div> 
-                                    </button>
+                                    <div class="formulary__color-format">
+                                        <h3>HEX</h3>
+                                    </div>
 
-                                    <button class="banner-theme__select-theme">
-                                        <div class="banner-theme">
-                                            <img src="/assets/images/Pic_banner_Gurren_Lagann.png" alt="eva" class="banner-theme__picture">
-                                        </div>  
-                                    </button>
-
-                                    <button class="banner-theme__select-theme">
-                                        <div class="banner-theme">
-                                            <img src="/assets/images/Pic_banner_Dash.png" alt="eva" class="banner-theme__picture">
-                                        </div>       
-                                    </button>
-
-                                    <button class="banner-theme__select-theme">
-                                        <div class="banner-theme">
-                                            <img  src="/assets/images/Dart_upload.png" alt="eva" class="banner-theme__picture">
-                                        </div>   
-                                    </button>
+                                    <input type="text" class="formulary__color-input" id="inputPrimaryColor" maxlength='6' value="3e4350"/> 
                                 </div>
-                                
-                                <div class="formulary-upload__wrapper">
-                                    <label for="upload" class="formulary-upload__label">Add File</label>
-                                    <input type="file" class="formulary-upload__input" id="upload" accept="image/png, image/jpeg"/>
+                            </div>
+                            
+                            <label for="secondaryColorPicker" class="banner-color__preview" id="previewSecondaryColor"></label>
 
-                                    <h3 id="uploadFileName" class="formulary-upload__name">Nenhum arquivo selecionado</h3>
+                            <div class="color__wrapper">
+                                <h3>Secondary color</h3>
+
+                                <input type="color" id="secondaryColorPicker" class="colorPicker">
+
+                                <div class="formulary__wrapper">
+                                    <div class="formulary__color-format">
+                                        <h3>HEX</h3>
+                                    </div>
+
+                                    <input type="text" class="formulary__color-input" id="inputSecondaryColor" maxlength='6' value="6e7781"/> 
                                 </div>
                             </div>
 
-                            <div class="formulary__banner-color">
-                                <h3 class="formulary__subtitle">Select color</h3>
+                            <label for="textBannerColorPicker" class="banner-color__preview" id="previewTextBannerColor"></label>
 
-                                <div class="banner-color">
-                                    <div class="banner-color__preview"></div>
+                            <div class="color__wrapper">
+                                <h3>Text color</h3>
 
-                                    <div class="color__wrapper">
-                                        <h3>Primary color</h3>
+                                <input type="color" id="textBannerColorPicker" class="colorPicker">
 
-                                        <div class="formulary__wrapper">
-                                            <input type="text" class="formulary__input"/> 
-                                        </div>
+                                <div class="formulary__wrapper">
+                                    <div class="formulary__color-format">
+                                        <h3>HEX</h3>
                                     </div>
-                                </div>
 
-                                <div class="banner-color">
-                                    <div class="banner-color__preview"></div>
-
-                                    <div class="color__wrapper">
-                                        <h3>Primary color</h3>
-
-                                        <div class="formulary__wrapper">
-                                            <input type="text" class="formulary__input"/> 
-                                        </div>
-                                    </div>
+                                    <input type="text" class="formulary__color-input" id="inputTextBannerColor" maxlength='6' value="f8f9fA"/> 
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="formulary">
-                        <div class="download__wrapper">
-                            <h2>Title Editor</h2>
-
-                            <button class="download-image" type="button" onclick="downloadImage('.render-title__container', 'title')">
-                                Download
-                                <img src="/assets/icons/download.svg" class="icon">
-                            </button>
-                        </div>
-
-                        <h3 class="formulary__subtitle">Title</h3>
-
-                        <div class="formulary__wrapper">
-                            <input type="text" class="formulary__input" id="inputTitle"/> 
-                        </div>
-                    </div>
-
-                    <div class="formulary">
-                        <div class="download__wrapper">
-                            <h2>Shield Editor</h2>
+                        <div class="formulary-title__wrapper">
+                            <h2>Dartpad Shield Editor</h2>
 
                             <button class="download-image" type="button" onclick="downloadImage('.render-shield__container', 'shield')">
                                 Download
-                                <img src="/assets/icons/download.svg" class="icon">
+                                
+                                <span class="download-image-icon">
+                                    get_app
+                                </span>
                             </button>
                         </div>
 
-                        <h3 class="formulary__subtitle">Title</h3>
+                        <div class="formulary-subtitle__wrapper">
+                            <h3 class="formulary__subtitle">Title</h3>
+                            <h3 class="formulary__subtitle" id="inputShieldCount">16/32</h3>
+                        </div>
 
                         <div class="formulary__shield">
-                            <button>
+                            <div class="shield__wrapper">
                                 <img class="icon--dart" src="/assets/icons/dart.svg">
-
-                                <h3>DartPad</h3>
-                            </button>
+    
+                                <h3 class="shield__text">DartPad</h3>
+                            </div>
 
                             <div class="formulary__wrapper">
-                                <input type="text" class="formulary__input" id="inputShield"/> 
+                                <input type="text" maxlength='32' class="formulary__input" id="inputShield" value="Manduma DartPad!"/> 
                             </div>
                         </div>
                     </div>
@@ -270,32 +261,20 @@
             <div class="render">
                 <div class="render-banner__container">
                     <div class="render-banner__image">
-                        <img id = "renderImage" src="/assets/images/Pic_banner_EVA01.png" alt="">
+                        <img id = "renderImage" src="/assets/icons/dart.svg" alt="">
                     </div>
 
                     <div class="render-banner__background">
                         <div class="render-banner__paragraph"></div>
                         
-                        <div class="render-banner__title-wrapper">
+                        <div id = "renderTextWrapper" class="render-banner__title-wrapper">
                             <h1 class="render-banner__title" id="renderBanner">
-                                String: Utilização e manipulação no Dart 
+                                Cevadis im ampola pa arma uma pindureta 
                             </h1>
                         </div>
                     </div>
                 </div>
-
-                <div class="render-background"></div>
-
-                <div class="render-title__container">
-                    <div class="render-title__background">
-                        <h1 class="render-title__text" id="renderTitle">
-                            Utilização e manipulação no Dart
-                        </h1>
-                    </div>
-                </div>
-
-                <div class="render-background"></div>
-
+                
                 <div class="render-shield__container">
                     <div class="render-shield__tech-background">
                         <img src="/assets/icons/dart.svg" alt="" class="render-shield__icon">
@@ -304,15 +283,8 @@
                     </div>
 
                     <div class="render-shield__text">
-                        <h3 class="render-shield__title" id="renderShield">Para o DartPad e além!</h3>
+                        <h3 class="render-shield__title" id="renderShield">Manduma DartPad!</h3>
                     </div>
-                </div>
-
-                <div class="render-message">
-                    <p>Bom dia, boa tarde ou boa noite!</p>
-
-                    <p>Parabens por chegar aqui! No nosso ramo, a curiosidade é fundamental.</p>
-                    
                 </div>
             </div>
         </home>
@@ -324,7 +296,7 @@
 
                 <h3>,</h3>
                 
-                <img src="/assets/icons/headphones.svg" class="icon" alt="">
+                <img src="/assets/icons/headphone.svg" class="icon" alt="">
 
                 <h3>e</h3>
 
@@ -335,14 +307,14 @@
         </footer>
     </div>
 
-    
+
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
     crossorigin="anonymous">
     </script>
-
+    
     <script src="/script.js"></script>
 </body>
 </html>
