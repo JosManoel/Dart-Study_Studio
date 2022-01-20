@@ -14,7 +14,6 @@
   <a href = "#sobre-este-projeto">👨🏻‍💻 Sobre este projeto </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href = "#tecnologias-utilizadas">🚀 Tecnologias utilizadas</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href = "#sobre-este-projeto">🖥️ Interface</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href = "#futuras-atualizacoes">🏗️ Futuras atualizações</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href = "#leitura">📚 Leitura e links recomendados</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href = "#licenca">🧾Licença</a>
 </p>
@@ -88,15 +87,6 @@ O editor é dividido em dois segmentos: o _Banner Editor_ e o *_artpad Shield Ed
     <p align = "center">
       <img src="assets\images\shield.png" height="24"/>
     </p>
-
-***
-
-<h2 id = "futuras-atualizacoes">🏗️ Futuras atualizações</h2>
-
-- [ ] Implementação do layout mobile;
-- [ ] Correção do redimensionamento de imagens;
-- [ ] Implementação da escolha de uma ou múltiplas cores para o banner;
-- [ ] Aprimoramento da customização do Shield Editor.
 
 ***
 
