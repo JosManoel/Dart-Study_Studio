@@ -28,7 +28,7 @@ Este projeto foi desenvolvido em resposta a necessidade de padronizar o conteúd
 ***
 
 <h2 id = "tecnologias-utilizadas">🚀 Tecnologias utilizadas</h2>
-Tecnologias utilizadas para o desenvolvimento do projeto
+Tecnologias utilizadas para o desenvolvimento do projeto:
 
 * [JQuery](https://jquery.com/)
 * [html2Canvas](https://html2canvas.hertzen.com/)
