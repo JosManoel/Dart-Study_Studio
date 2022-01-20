@@ -1,9 +1,42 @@
-# <img src="assets\icons\dart.svg" width = "24">  Dart Study Studio
+<h1 align = "center">
+  <a href = "https://dart-study-studio.vercel.app">
+    <img src = "assets\images\repo_logo.png" height = "128px">
+  </a>
+  
+  <p align="center">
+    <img src="https://img.shields.io/github/last-commit/JosManoel/Dart-Study_Studio">
+    <img src="https://img.shields.io/github/license/JosManoel/Dart-Study_Studio">
+    <img src="https://img.shields.io/github/repo-size/JosManoel/Dart-Study_Studio">
+  </p>
+</h1>
+
+<p align="center">
+  <a href = "#sobre-este-projeto">👨🏻‍💻 Sobre este projeto </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href = "#tecnologias-utilizadas">🚀 Tecnologias utilizadas</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href = "#sobre-este-projeto">🖥️ Interface</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href = "#futuras-atualizacoes">🏗️ Futuras atualizações</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href = "#leitura">📚 Leitura e links recomendados</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href = "#licenca">🧾Licença</a>
+</p>
+ 
+ ***
+
+<h2 id = "sobre-este-projeto">👨🏻‍💻 Sobre este projeto </h2>
 
 Este projeto foi desenvolvido em resposta a necessidade de padronizar o conteúdo inserido no [Dart Study](https://github.com/JosManoel/Dart-Study) de forma simples, através da criação de banners e shields para os materiais produzidos. O repositório original, o Dart Study, conta com diversos artigos sobre a utilização do Dart para o desenvolvimento multiplataforma em português, aliados a exemplos interativos com o [DartPad](https://dartpad.dev/?null_safety=true).
 
-## 🖥️ Interface
+***
 
+<h2 id = "tecnologias-utilizadas">🚀 Tecnologias utilizadas</h2>
+Tecnologias utilizadas para o desenvolvimento do projeto
+
+* [JQuery](https://jquery.com/)
+* [html2Canvas](https://html2canvas.hertzen.com/)
+
+***
+
+<h2 id = "sobre-este-projeto">🖥️ Interface</h2>
+  
 A interface do Dart Study Studio é dividida em dois setores: a tela de preview, que permite visualizar o banner antes de realizar o download, e o setor de edição, onde é realizada a modificação do banner e do shield.
 
 ### 👀 Preview 
@@ -56,20 +89,27 @@ O editor é dividido em dois segmentos: o _Banner Editor_ e o *_artpad Shield Ed
       <img src="assets\images\shield.png" height="24"/>
     </p>
 
-## 🏗️ Futuras atualizações
+***
+
+<h2 id = "futuras-atualizacoes">🏗️ Futuras atualizações</h2>
 
 - [ ] Implementação do layout mobile;
 - [ ] Correção do redimensionamento de imagens;
 - [ ] Implementação da escolha de uma ou múltiplas cores para o banner;
 - [ ] Aprimoramento da customização do Shield Editor.
 
-## 📚 Leitura e links recomendado:
+***
+
+ <h2 id = "leitura">📚 Leitura e links recomendados</h2>
+  
 * [📝 Dart - Documentação](https://dart.dev/guides)
 * [🎯 Dart Study](https://github.com/JosManoel/Dart-Study)
 * [🎯 DartPad](https://dartpad.dev/)
 
 ***
-## 🧾Licença:
+  
+<h2 id = "licenca">🧾Licença</h2>
+  
 Este projeto está sob a licença [Apache 2.0](https://github.com/JosManoel/Dart-Study_Studio/blob/main/LICENSE).
 
 *** 
