@@ -40,7 +40,7 @@ A interface do Dart Study Studio é dividida em dois setores: a tela de preview,
 
 ### 👀 Preview 
 
-A tela de preview possui a missão de permitir a visualização do banner, bem como sua formatação no arquivo de texto, simulando uma tela de "README", que pode ser alterada conforme o tela selecionado no _theme mode_. 
+A tela de preview possui a missão de permitir a visualização do banner, bem como sua formatação no arquivo de texto, simulando uma tela de "README", que pode ser alterada conforme o tema selecionado no _theme mode_. 
 
 
 > Cacilds, os elementos textuais utilizados como base para a tela de preview foram inteiramente retidados do [Mussum Ipsum](https://mussumipsum.com/).
